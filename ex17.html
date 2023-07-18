@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Page_17</title>
+
+<style type="text/css">
+	#wrap{ display: flex; width: 300px; background: olive; }
+	#wrap div { }
+	/* 순서 안 정하면 차례대로 적용 됨. 순서정하는 건 order 이용*/
+	#wrap div:first-child { order:3; background: silver; }
+	#wrap div:nth-child(2) { order:1; background: green; }
+	#wrap div:nth-child(3) { order:2; background: aqua; }
+</style>
+
+</head>
+<body>
+	<div id="wrap">
+		<div> <h1>1</h1> </div>
+		<div> <h1>2</h1> </div>
+		<div> <h1>3</h1> </div>
+	</div>
+</body>
+</html>
